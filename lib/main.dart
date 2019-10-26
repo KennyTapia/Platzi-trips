@@ -3,6 +3,7 @@ import 'package:platzi_trips/description_place.dart';
 import 'package:platzi_trips/gradient_back.dart';
 import 'package:platzi_trips/review.dart';
 import 'package:platzi_trips/review_list.dart';
+import 'package:platzi_trips/header_appbar.dart';
 
 String descriptionDummy = "Lorem ipsum dolor sit ammet, consectetuer adipiscing elit.Aenean commodo ligula eget dolor. Aenean massa.Cum sociis natoque penatibus et magnis dis pertunrient montes,nascetur ridiculus mus. Donec quam felis, ultricies nec,pellentesque eu, Pretium quis, sem. Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate ege, arcu. in enim justo, rhoncus ut, imperdiet a.";
 
@@ -27,10 +28,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("Hola Mundo Feliz!"),
-        ),
-//        body: DescriptionPlace("Bahamas", 4, descriptionDummy),
         body: Stack(
           children: <Widget>[
             ListView(
@@ -39,7 +36,7 @@ class MyApp extends StatelessWidget {
                 ReviewList()
               ],
             ),
-            GradientBack(),
+            HeaderAppBar()
           ],
         ),
       )//MyHomePage(title: 'Flutter Demo Home Page'),
